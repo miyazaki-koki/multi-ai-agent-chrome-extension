@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Multi-AI Agent Browser",
+    "version": "1.0.0",
+    "description": "Chrome extension that integrates multiple AI agents for web automation",
+    "permissions": [
+          "runtime",
+          "tabs",
+          "scripting",
+          "storage",
+          "activeTab"
+    ],
+    "host_permissions": [
+          "<all_urls>"
+    ],
+    "action": {
+          "default_popup": "popup.html",
+          "default_title": "Multi-AI Agent"
+    },
+    "background": {
+          "service_worker": "background.js"
+    },
+    "content_scripts": [
+          {
+                  "matches": ["<all_urls>"],
+                  "js": ["content.js"]
+          }
+    ]
+}
