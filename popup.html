@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Multi-AI Agent Browser</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+    <div class="container">
+          <header>
+                  <h1>Multi-AI Agent</h1>
+                <p class="subtitle">Web Automation & Intelligence</p>p>
+          </header>
+    
+        <main>
+                <section class="input-section">
+                          <label for="task-input">Task or Query:</label>label>
+                          <textarea id="task-input" placeholder="Ask me to search, automate, or analyze a webpage..."></textarea>
+                </section>section>
+
+                <section class="ai-selection">
+                          <label for="ai-select">Select AI Agent:</label>label>
+                          <select id="ai-select">
+                                      <option value="claude">Claude (Recommended)</option>option>
+                                      <option value="gpt4">GPT-4</option>option>
+                                      <option value="hybrid">Hybrid Mode</option>option>
+                          </select>select>
+                </section>section>
+
+                <section class="action-buttons">
+                          <button id="execute-btn" class="btn btn-primary">Execute</button>button>
+                          <button id="search-btn" class="btn btn-secondary">Search Web</button>button>
+                          <button id="analyze-btn" class="btn btn-secondary">Analyze Page</button>button>
+                </section>section>
+
+                <section class="results">
+                          <div id="loading" class="loading hidden">
+                                      <div class="spinner"></div>div>
+                                      <p>Processing...</p>
+                          </div>div>
+                        <div id="result-output" class="result-box hidden">
+                                  <h3>Result:</h3>
+                                  <div id="result-content"></div>div>
+                        </div>div>
+                        <div id="error-output" class="error-box hidden">
+                                  <h3>Error:</h3>
+                                  <div id="error-content"></div>div>
+                        </div>div>
+                </section>section>
+        </main>
+    
+        <footer>
+                <p>Powered by Multi-AI Agent Framework</p>p>
+        </footer>
+    </div>div>
+
+    <script src="popup.js"></script>
+</body>
+</html>html>
+        </footer></p>
+        </main></h1>
+          </header>
+</body></title>
+  </head>
